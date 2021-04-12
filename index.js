@@ -65,7 +65,7 @@ app.use((req, res, next) => {
 	res.locals.vardump = helpers.vardump;
 	res.locals.mensajes = req.flash();
 	res.locals.usuario = { ...req.user } || null;
-	console.log(`🚀 => file: index.js => line 65 => app.use => res.locals.usuario`, res.locals.usuario);
+	// console.log(`🚀 => file: index.js => line 65 => app.use => res.locals.usuario`, res.locals.usuario);
 	next();
 });
 
