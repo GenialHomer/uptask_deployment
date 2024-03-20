@@ -1,6 +1,9 @@
+// importar las variables .env
+require('dotenv').config({ path: 'variables.env' });
+
 module.exports = {
-	user: '3a5195f6c48306',
-	pass: 'ded35c351abdd0',
-	host: 'smtp.mailtrap.io',
-	port: '2525',
-};
+	user: process.env.EMAIL_USER , 
+	pass: process.env.EMAIL_PASS ,
+	host: process.env.EMAIL_HOST ,
+	port: process.env.EMAIL_PORT
+} 
